@@ -1,0 +1,14 @@
+.bg-primary.bg-gradient {
+    background: linear-gradient(90.79deg, #4E86E1 3.18%, #394EC9 97.27%);
+}
+
+.nav-pills {
+    .nav-link{
+        color: $neutral-500;
+    }
+    .nav-link.active,
+    .nav-pills .show>.nav-link {
+        color: $neutral-950;
+        background-color: $white;
+    }
+}
