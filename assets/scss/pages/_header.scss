@@ -4,7 +4,8 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 5% 0;
     overflow: hidden;
   }
 
@@ -86,9 +87,11 @@
   background-color: #fff;
   justify-content: space-between;
   flex-wrap: nowrap;
-  position: static;
+  position: absolute;
   bottom: 0;
   width: 100%;
+  z-index: 99999;
+  
 
   @include media-breakpoint-down(sm) {
     position: fixed;
@@ -96,11 +99,32 @@
 
   .nav-link {
     padding: 8px 0;
-
     font-size: 10px;
     width: 100%;
     text-align: center;
     color: #2C2E33;
+    position: relative;
+    z-index: 1;
+
+    .link-active {
+      display: none;
+      visibility: hidden;
+    }
+
+    &.active,&:hover {
+      color: $primary;
+
+      .link-normal {
+        display: none;
+        visibility: hidden;
+      }
+
+      .link-active {
+        display: inline-block;
+        visibility: visible;
+
+      }
+    }
 
     b {
       margin-top: 4px;
@@ -131,13 +155,13 @@
 
 .contentArea {
   width: 100%;
-  height: calc(100% - 129px);
+  height: calc(100% - 114px);
   overflow-y: scroll;
   // padding-top: 54px;
- 
+
 
   @include media-breakpoint-down(sm) {
-  
-  padding-bottom: 76px;
+
+    padding-bottom: 76px;
   }
 }

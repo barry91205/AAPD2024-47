@@ -1,0 +1,22 @@
+.modal{
+    position: absolute;
+    .modal-fullscreen{
+        width: 100%;
+        height: calc(100% - 54px);
+        padding-bottom: 60px;
+        top: 54px;
+    }
+}
+.modal-backdrop.show{
+    display: none;
+}
+
+
+.modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out;
+    transform: translate(0, 0px);
+}
+
+.modal.show .modal-dialog {
+    transform: none;
+}
