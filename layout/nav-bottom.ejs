@@ -1,15 +1,16 @@
 <nav class="nav nav-bottom">
-    <a class="nav-link active" aria-current="page" href="index.html">
+    <a class="nav-link  <%= page === 'home' ? 'active' : '' %>" aria-current="page" href="index.html">
         <img src="/assets/images/icon/nav-1.svg" width="24" class="link-normal">
         <img src="/assets/images/icon/nav-1-active.svg" width="24" class="link-active">
         <b>首頁</b>
     </a>
-    <a class="nav-link" href="budget-setting.html">
+    
+    <a class="nav-link <%= page === 'budget' ? 'active' : '' %>" href="budget.html">
         <img src="/assets/images/icon/nav-2.svg" width="24" class="link-normal">
         <img src="/assets/images/icon/nav-2-active.svg" width="24" class="link-active">
         <b>設定預算</b>
     </a>
-    <a class="nav-link plus-link" href="accounting.html">
+    <a class="nav-link plus-link <%= page === 'accounting' ? 'active' : '' %>" href="accounting.html">
         <div class="icon-plus rounded-circle">
             <i class="bi bi-plus-lg"></i>
         </div>
@@ -25,6 +26,5 @@
         <img src="/assets/images/icon/nav-5.svg" width="24" class="link-normal">
         <img src="/assets/images/icon/nav-5-active.svg" width="24" class="link-active">
         <b>會員中心</b>
-
     </a>
 </nav>
