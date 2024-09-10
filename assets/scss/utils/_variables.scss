@@ -297,8 +297,9 @@ $cyans: (
 ) !default;
 // fusv-enable
 
+
 // 客製色跳 start
-$primary-50: #F4F6F9;
+$primary-50: rgba(236, 244, 255, 1);
 $primary-100: #E1EAFE;
 $primary-200: #C4D3FE;
 $primary-300: #A7BDFE;
@@ -356,11 +357,11 @@ $success-400: #0A4E4C;
 // scss-docs-start theme-color-variables
 $primary:       $primary-600;//$blue !default;
 $secondary:     $gray-600 !default;
-$success:       $success-200;//$green !default;
+$success:       $success-300;//$green !default;
 $info:          $neutral-300;//$cyan !default;
 $warning:       $accent-500;//$yellow !default;
 $danger:        $danger-300; // $red !default;
-$light:         $gray-100 !default;
+$light:         $white !default;
 $dark:          $gray-900 !default;
 // scss-docs-end theme-color-variables
 
@@ -627,7 +628,7 @@ $container-max-widths: (
 
 $grid-columns:                12 !default;
 $grid-gutter-width:           1.5rem !default;
-$grid-row-columns:            6 !default;
+$grid-row-columns:            12 !default;
 
 // Container padding
 
@@ -648,15 +649,15 @@ $border-widths: (
   5: 5px
 ) !default;
 $border-style:                solid !default;
-$border-color:                $gray-300 !default;
+$border-color:                $neutral-100;//$gray-300 !default;
 $border-color-translucent:    rgba($black, .175) !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
-$border-radius-sm:            4px;//   .25rem !default;
-$border-radius:               12px;//  .375rem !default;
-$border-radius-lg:            16px;// .5rem !default;
-$border-radius-xl:            24px;// 1rem !default;
+$border-radius-sm:            4px;//  rounded-1   .25rem !default;
+$border-radius:               12px;// rounded-2 , rounded  .375rem !default;
+$border-radius-lg:            16px;// rounded-3   .5rem !default;
+$border-radius-xl:            24px;// rounded-4   1rem !default;
 $border-radius-xxl:           2rem !default;
 $border-radius-pill:          50rem !default;
 // scss-docs-end border-radius-variables
@@ -1292,8 +1293,8 @@ $nav-pills-link-active-color:       $component-active-color !default;
 $nav-pills-link-active-bg:          $component-active-bg !default;
 
 $nav-underline-gap:                 1rem !default;
-$nav-underline-border-width:        .125rem !default;
-$nav-underline-link-active-color:   var(--#{$prefix}emphasis-color) !default;
+$nav-underline-border-width:        1px;//.125rem !default;
+$nav-underline-link-active-color:   $primary-600;//var(--#{$prefix}emphasis-color) !default;
 // scss-docs-end nav-variables
 
 
