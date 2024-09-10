@@ -1,0 +1,12 @@
+.modal{
+    position: absolute;
+    .modal-fullscreen{
+        width: 100%;
+        height: calc(100% - 92px);
+        padding-bottom: 60px;
+        top: 92px;
+    }
+}
+.modal-backdrop.show{
+    display: none;
+}
