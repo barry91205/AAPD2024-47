@@ -299,7 +299,7 @@ $cyans: (
 
 
 // 客製色跳 start
-$primary-50: rgba(236, 244, 255, 1);
+$primary-50: #ecf4ff;
 $primary-100: #E1EAFE;
 $primary-200: #C4D3FE;
 $primary-300: #A7BDFE;
@@ -433,7 +433,7 @@ $theme-colors: (
 // scss-docs-start theme-text-variables
 $primary-text-emphasis:   shade-color($primary, 60%) !default;
 $secondary-text-emphasis: shade-color($secondary, 60%) !default;
-$success-text-emphasis:   shade-color($success, 60%) !default;
+$success-text-emphasis:   $neutral-950;//shade-color($success, 60%) !default;
 $info-text-emphasis:      shade-color($info, 60%) !default;
 $warning-text-emphasis:   shade-color($warning, 60%) !default;
 $danger-text-emphasis:    shade-color($danger, 60%) !default;
@@ -444,7 +444,7 @@ $dark-text-emphasis:      $gray-700 !default;
 // scss-docs-start theme-bg-subtle-variables
 $primary-bg-subtle:       tint-color($primary, 80%) !default;
 $secondary-bg-subtle:     tint-color($secondary, 80%) !default;
-$success-bg-subtle:       tint-color($success, 80%) !default;
+$success-bg-subtle:       $success-50;//tint-color($success, 80%) !default;
 $info-bg-subtle:          tint-color($info, 80%) !default;
 $warning-bg-subtle:       tint-color($warning, 80%) !default;
 $danger-bg-subtle:        tint-color($danger, 80%) !default;
@@ -455,7 +455,7 @@ $dark-bg-subtle:          $gray-400 !default;
 // scss-docs-start theme-border-subtle-variables
 $primary-border-subtle:   tint-color($primary, 60%) !default;
 $secondary-border-subtle: tint-color($secondary, 60%) !default;
-$success-border-subtle:   tint-color($success, 60%) !default;
+$success-border-subtle:   $success-300;//tint-color($success, 60%) !default;
 $info-border-subtle:      tint-color($info, 60%) !default;
 $warning-border-subtle:   tint-color($warning, 60%) !default;
 $danger-border-subtle:    tint-color($danger, 60%) !default;
@@ -519,12 +519,17 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25, // 4px
-  2: $spacer * .5,  // 8px
-  3: $spacer * .75, // 12px
-  4: $spacer,       // 16px
+  1: $spacer * .25,  // 4px
+  2: $spacer * .5,   // 8px
+  3: $spacer * .75,  // 12px
+  4: $spacer,        // 16px
   5: $spacer * 1.25, //20px
-  6: $spacer * 1.5, // 24px
+  6: $spacer * 1.5,  // 24px
+  7: $spacer * 2,    // 32px
+  8: $spacer * 2.5,  // 40px
+  9: $spacer * 3,    // 48px
+  10: $spacer * 3.5, // 56px
+  11: $spacer * 4,   // 64px
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -1453,7 +1458,7 @@ $placeholder-opacity-min:           .2 !default;
 // Cards
 
 // scss-docs-start card-variables
-$card-spacer-y:                     $spacer !default;
+$card-spacer-y:                     12px;//$spacer !default;
 $card-spacer-x:                     $spacer !default;
 $card-title-spacer-y:               $spacer * .5 !default;
 $card-title-color:                  null !default;
@@ -1663,7 +1668,7 @@ $modal-scale-transform:             scale(1.02) !default;
 $alert-padding-y:               $spacer !default;
 $alert-padding-x:               $spacer !default;
 $alert-margin-bottom:           1rem !default;
-$alert-border-radius:           var(--#{$prefix}border-radius) !default;
+$alert-border-radius:           12px;//var(--#{$prefix}border-radius) !default;
 $alert-link-font-weight:        $font-weight-bold !default;
 $alert-border-width:            var(--#{$prefix}border-width) !default;
 $alert-dismissible-padding-r:   $alert-padding-x * 3 !default; // 3x covers width of x plus default padding on either side
