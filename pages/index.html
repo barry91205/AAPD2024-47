@@ -19,7 +19,7 @@
       <section class="appContent">
         <%- include('./layout/status-bar'); -%>
 
-          <div class="contentArea bg-gradient-1">
+          <div class="main-content bg-gradient-1">
             <header class="d-flex align-items-center justify-content-end py-1 px-4 bg-primary-50 sticky-top">
               <a href="#" class="filter-time no-arrow me-auto dropdown-toggle link-neutral-950"
                 data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
@@ -44,9 +44,9 @@
                   <div class="tab-pane fade show active px-2" id="filter-moon" role="tabpanel"
                     aria-labelledby="filter-date-moon-tab" tabindex="0">
                     <div class="d-flex align-items-center justify-content-between mb-3">
-                      <span class="d-block p-2"><img src="/assets/images/icon/arrow-left.svg" width="24"></span>
+                      <span class="d-block p-2"><img src="/assets/images/home/arrow-left.svg" width="24"></span>
                       <b class="text-primary-600">2024</b>
-                      <span class="d-block p-2"><img src="/assets/images/icon/arrow-right.svg" width="24"></span>
+                      <span class="d-block p-2"><img src="/assets/images/home/arrow-right.svg" width="24"></span>
                     </div>
                     <ul class="moon-group list-unstyled text-center row row-cols-3 g-0">
                       <li class="col"><a href="#" class="btn btn-light w-100 py-3">1 月</a></li>
@@ -67,9 +67,9 @@
                   <div class="tab-pane fade" id="filter-date" role="tabpanel" aria-labelledby="filter-date-tab"
                     tabindex="0">
                     <div class="d-flex align-items-center justify-content-between">
-                      <span class="d-block p-2"><img src="/assets/images/icon/arrow-left.svg" width="24"></span>
+                      <span class="d-block p-2"><img src="/assets/images/home/arrow-left.svg" width="24"></span>
                       <b class="text-primary-600">2024 / 8 <i class="bi bi-caret-down-fill fs-8"></i></b>
-                      <span class="d-block p-2"><img src="/assets/images/icon/arrow-right.svg" width="24"></span>
+                      <span class="d-block p-2"><img src="/assets/images/home/arrow-right.svg" width="24"></span>
                     </div>
                     <ul class="week-group list-unstyled text-center row g-0 py-3 px-1 border-bottom">
                       <li class="col"><a href="#" class="btn btn-light w-100 p-0 fs-7">週日</a></li>
@@ -184,7 +184,7 @@
                 </div>
               </div>
 
-              <div class="d-flex fs-7 mb-1 border-bottom py-2">
+              <!-- <div class="d-flex fs-7 mb-1 border-bottom py-2">
                 <small class="d-inline-block me-auto text-neutral-500">交易記錄</small>
                 <b class="text-danger">-$20</b>
                 <span class="d-inline-block px-1 text-neutral-500">/</span>
@@ -192,7 +192,7 @@
               </div>
               <ul class="list-unstyled">
                 <li class="d-flex border-bottom py-3 mb-1">
-                  <i class="d-inline-block p-3 rounded-3 bg-neutral-50"><img src="/assets/images/icon/airplane.svg" width="20"></i>
+                  <i class="d-inline-block p-3 rounded-3 bg-neutral-50"><img src="/assets/images/home/airplane.svg" width="20"></i>
                   <div class="ms-3">
                     <b class="d-block">日本自由行</b>
                     <small class="text-neutral-500">旅遊</small>
@@ -204,7 +204,7 @@
                 </li>
 
                 <li class="d-flex border-bottom py-3 mb-1">
-                  <i class="d-inline-block p-3 rounded-3 bg-neutral-50"><img src="/assets/images/icon/coin.svg" width="20"></i>
+                  <i class="d-inline-block p-3 rounded-3 bg-neutral-50"><img src="/assets/images/home/coin.svg" width="20"></i>
                   <div class="ms-3">
                     <b class="d-block">其他收入</b>
                     <small class="text-neutral-500">旅遊</small>
@@ -217,7 +217,7 @@
 
 
                 <li class="d-flex border-bottom py-3 mb-1">
-                  <i class="d-inline-block p-3 rounded-3 bg-neutral-50"><img src="/assets/images/icon/airplane.svg" width="20"></i>
+                  <i class="d-inline-block p-3 rounded-3 bg-neutral-50"><img src="/assets/images/home/airplane.svg" width="20"></i>
                   <div class="ms-3">
                     <b class="d-block">日本自由行</b>
                     <small class="text-neutral-500">旅遊</small>
@@ -228,8 +228,7 @@
                   </div>
                 </li>
                 
-                
-              </ul>
+              </ul> -->
 
 
 
@@ -237,8 +236,8 @@
 
 
 
-              <div class="text-center py-5 my-5">
-                <img src="/assets/images/deco/beelingu.svg" width="64">
+              <div class="text-center pt-10">
+                <img src="/assets/images/home/beelingu.svg" width="64">
                 <b class="fs-7 d-block my-1">尚無紀錄</b>
                 <p class="fs-7 text-neutral-500">
                   趕快點擊下方「記帳」按鈕<br>
@@ -248,7 +247,7 @@
 
             </main>
           </div>
-          <%- include('./layout/nav-bottom',{page:'home'}); -%>
+          <%- include('./layout/tab-bar',{page:'home'}); -%>
       </section>
 
     </div>
