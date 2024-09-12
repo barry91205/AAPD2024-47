@@ -87,10 +87,12 @@
 
         input:checked~.form-check-label {
             color: #394EC9;
+
             .icon-image {
                 &::before {
                     opacity: 1;
                 }
+
                 .image {
 
                     background: linear-gradient(90.79deg, #4E86E1 3.18%, #394EC9 97.27%);
