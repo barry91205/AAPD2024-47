@@ -1,0 +1,23 @@
+.status-bar {
+  // background: #ECF4FF;
+  display: flex;
+  justify-content: space-between;
+  position: static;
+  top: 0;
+  width: 100%;
+
+  @include media-breakpoint-down(sm) {
+    position: fixed;
+  }
+
+  .iphone-time,
+  .iphone-notch,
+  .iphone-status {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
