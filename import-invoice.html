@@ -2,24 +2,27 @@
 <html lang="zh-TW">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>CoinB 記帳APP</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Bootstrap 5 的 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <title>CoinB 記帳APP</title>
   <script type="module" crossorigin src="/AAPD2024-47/assets/bootstrap.esm-fce2fdf9.js"></script>
   <link rel="stylesheet" href="/AAPD2024-47/assets/bootstrap-89186a61.css">
 </head>
 
 <body>
 
-    <div class="wrapper">
-        <div class="appWrapper">
-            <section class="appContent">
-                <div class="status-bar bg-primary-50 d-sm-flex d-none">
+  <div class="wrapper">
+    <div class="appWrapper">
+      <section class="appContent">
+        <div class="status-bar bg-primary-50 d-sm-flex d-none">
     <div class="iphone-time">
         <time datetime="">9:41</time>
     </div>
@@ -29,78 +32,15 @@
     <div class="iphone-status">
         <img src="/AAPD2024-47/assets/icon-status-f626aaa9.svg" alt="status" height="13">
     </div>
-</div>                    <div class="main-content bg-primary-50">
-                        <header class="d-flex justify-content-between align-items-center bg-primary-50 sticky-top">
-                            <a href="#member" class="d-block">
-                                <img src="/AAPD2024-47/assets/arrow-left-d8c8363f.svg" width="44">
-                            </a>
-                            <h1 class="fs-5">我的發票</h1>
-                            <a class="d-block" data-bs-toggle="modal" data-bs-target="#invoice-add-Modal">
-                                <img src="/AAPD2024-47/assets/scan-4f86e705.svg" width="44" alt="">
-                            </a>
-                        </header>
-                        <main class="pt-4 bg-primary-50 " >
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="card mb-4">
-                                            <div class="card-body p-0">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <a href="#"><img src="/AAPD2024-47/assets/btn-arrow-left-6cf53e0e.svg"
-                                                            alt=""></a>
-                                                    <b class="text-primary-600">113 年 7~8 月</b>
-                                                    <a href="#"><img src="/AAPD2024-47/assets/btn-arrow-right-5b251120.svg"
-                                                            alt=""></a>
-                                                </div>
-                                                <div class="p-4">
-                                                    <div class="row justify-content-center gx-2 gy-3">
-                                                        <div class="col-6">
-                                                            <div class="text-center py-2 bg-neutral-50 rounded">
-                                                                <small
-                                                                    class="fs-8 text-neutral-500 d-block">發票張數</small>
-                                                                <b>15 張</b>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-6">
-                                                            <div class="text-center py-2 bg-neutral-50 rounded">
-                                                                <small class="fs-8 text-neutral-500 d-block">總金額</small>
-                                                                <b>$10,000</b>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-auto">
-                                                            <small
-                                                                class="fs-8 bg-neutral-50 text-neutral-500 py-1 px-3 rounded">開獎日
-                                                                113 / 9 / 25</small>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                                <div class="card">
-                                    <div class="card-body d-flex flex-column text-center align-items-center justify-content-center" style="min-height: 475px;">
-                                            <img src="/AAPD2024-47/assets/beelingu-8a86a830.svg" width="64"
-                                                class="opacity-50">
-                                            <small class="text-neutral-500 d-block">本期尚無發票</small>
-                                    </div>
-                                </div>
-                        </main>
-                    </div>
-                    <!-- Modal  -->
-<div class="modal fade" id="invoice-add-Modal" tabindex="-1" aria-labelledby="invoice-add-ModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content">
-            <form action="./invoice-view_data.html" class="h-100 d-flex flex-column">
-                <div class="modal-header justify-content-center py-2 bg-primary-50 position-relative">
-                    <a href="./invoice-no_data.html" class="position-absolute start-0 top-50 translate-middle-y">
-                        <img src="/AAPD2024-47/assets/arrow-left-d8c8363f.svg" width="44">
-                    </a>
-                    <h1 class="fs-5 text-center">匯入發票</h1>
-                </div>
+</div>
+          <div class="contentArea bg-gradient-1">
+            <div class="modal-header justify-content-center py-2 bg-primary-50 position-relative">
+                <a href="./invoice-no_data.html" class="position-absolute start-0 top-50 translate-middle-y">
+                    <img src="/AAPD2024-47/assets/arrow-left-d8c8363f.svg" width="44">
+                </a>
+                <h1 class="fs-5 text-center">匯入發票</h1>
+            </div>
+            <main>
                 <div class="modal-body p-0 container-fluid">
                     <ul class="nav nav-underline nav-fill gap-0 px-4" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
@@ -117,12 +57,17 @@
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
                             aria-labelledby="pills-home-tab" tabindex="0">
-                            <div class="text-center d-flex justify-content-center align-items-center flex-column"
-                                style="min-height: 516px;">
-                                <img src="/AAPD2024-47/assets/camera-slash-68f0702f.svg" width="64" alt="">
-                                <b class="d-block fs-7 pt-1 pb-2">未開啟相機權限</b>
-                                <small class="fs-7 text-neutral-500">目前無法使用掃描發票功能<br>請先至「設定」⭢「CoinBee」中允許相機權限</small>
-                                <a href="#" class="btn btn-primary px-7 py-2 mt-6">開啟權限</a>
+                            <div class="position-relative"
+                                style="height: 680px; background-image: url('/assets/images/invoice/camera\ zone.svg');background-repeat: no-repeat; background-size: cover;">
+                                <div class="alert-notion position-absolute start-50 translate-middle-x bottom-0"
+                                style="width: calc(100% - 32px);">
+                                 <div class="alert alert-success fs-7 flex-grow-1 mb-8 text-start fw-bolder text-neutral-950 py-3 px-4 mx-0 rounded-1"
+                                    role="alert">
+                                    <i class="bi bi-check-circle text-success-300 me-2 d-inline-block"></i>
+                                    匯入成功
+                                 </div>
+                                </div>
+                            </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel"
@@ -216,20 +161,19 @@
                 </div>
 
 
-            </form>
-        </div>
-    </div>
-</div>
-                    <nav class="nav tab-bar">
+              
+            </main>
+          </div>
+          <!-- <nav class="nav tab-bar">
     <a class="nav-link  " aria-current="page" href="index.html">
-        <img src="/AAPD2024-47/assets/nav-1-0f3fbeab.svg" width="24" class="link-normal">
-        <img src="/AAPD2024-47/assets/nav-1-active-5d4cd73c.svg" width="24" class="link-active">
+        <img src="/assets/images/tab-bar/nav-1.svg" width="24" class="link-normal">
+        <img src="/assets/images/tab-bar/nav-1-active.svg" width="24" class="link-active">
         <b>首頁</b>
     </a>
     
     <a class="nav-link " href="budget-no_data.html">
-        <img src="/AAPD2024-47/assets/nav-2-e0709bcd.svg" width="24" class="link-normal">
-        <img src="/AAPD2024-47/assets/nav-2-active-eb65f54f.svg" width="24" class="link-active">
+        <img src="/assets/images/tab-bar/nav-2.svg" width="24" class="link-normal">
+        <img src="/assets/images/tab-bar/nav-2-active.svg" width="24" class="link-active">
         <b>設定預算</b>
     </a>
     <a class="nav-link plus-link " href="accounting.html">
@@ -239,23 +183,23 @@
         <b>記帳</b>
     </a>
     <a class="nav-link" href="#">
-        <img src="/AAPD2024-47/assets/nav-4-f88d2a8f.svg" width="24" class="link-normal">
-        <img src="/AAPD2024-47/assets/nav-4-active-ccea8a7c.svg" width="24" class="link-active">
+        <img src="/assets/images/tab-bar/nav-4.svg" width="24" class="link-normal">
+        <img src="/assets/images/tab-bar/nav-4-active.svg" width="24" class="link-active">
         <b>報表分析</b>
 
     </a>
-    <a class="nav-link " href="memberCenter.html">
-        <img src="/AAPD2024-47/assets/nav-5-7761ce03.svg" width="24" class="link-normal">
-        <img src="/AAPD2024-47/assets/nav-5-active-1a9eed27.svg" width="24" class="link-active">
+    <a class="nav-link active" href="memberCenter.html">
+        <img src="/assets/images/tab-bar/nav-5.svg" width="24" class="link-normal">
+        <img src="/assets/images/tab-bar/nav-5-active.svg" width="24" class="link-active">
         <b>會員中心</b>
     </a>
-</nav>            </section>
-        </div>
+</nav> -->
+      </section>
+
     </div>
+  </div>
 
-
-
-    
+  
 </body>
 
 </html>
