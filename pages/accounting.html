@@ -18,7 +18,7 @@
         <div class="appWrapper">
             <section class="appContent">
                 <%- include('./layout/status-bar'); -%>
-                    <div class="contentArea">
+                    <div class="main-content">
                         <!-- App 內容 -->
                         <header class="bg-primary-50 sticky-top  ">
                             <div class="position-relative py-2">
@@ -40,24 +40,353 @@
                                         data-bs-target="#pills-profile" type="button" role="tab"
                                         aria-controls="pills-profile" aria-selected="false">收入</button>
                                 </li>
-
                             </ul>
                         </header>
 
                         <main>
 
-                            <div class="tab-content" id="pills-tabContent">
-                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                                    aria-labelledby="pills-home-tab" tabindex="0">
-                                    123
+                            <div class="container-fluid">
+                                <div class="tab-content" id="pills-tabContent">
+                                    <!-- tab-pane -->
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                        aria-labelledby="pills-home-tab" tabindex="0">
+                                        <form action="">
+                                            <ul
+                                                class="list-unstyled icon-type-list row gx-2 gy-4 row-cols-4 border-bottom py-4">
+                                                <li class="col">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="flexRadioDefault" id="flexRadioDefault2">
+                                                        <label class="form-check-label" for="flexRadioDefault2">
+                                                            <div class="icon-image">
+                                                                <div class="image"
+                                                                    style="mask-image: url(/assets/images/accounting/icon/add-circle.svg);">
+                                                                </div>
+                                                            </div>
+                                                            <b class="fs-8">新增</b>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li class="col">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="flexRadioDefault" id="flexRadioDefault3" checked>
+                                                        <label class="form-check-label" for="flexRadioDefault3">
+                                                            <div class="icon-image">
+                                                                <div class="image"
+                                                                    style="mask-image: url(/assets/images/accounting/icon/toast.svg);">
+                                                                </div>
+                                                            </div>
+                                                            <b class="fs-8">飲食</b>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li class="col">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="flexRadioDefault" id="flexRadioDefault4">
+                                                        <label class="form-check-label" for="flexRadioDefault4">
+                                                            <div class="icon-image">
+                                                                <div class="image"
+                                                                    style="mask-image: url(/assets/images/accounting/icon/medical.svg);">
+                                                                </div>
+                                                            </div>
+                                                            <b class="fs-8">醫療</b>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li class="col">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="flexRadioDefault" id="flexRadioDefault5">
+                                                        <label class="form-check-label" for="flexRadioDefault5">
+                                                            <div class="icon-image">
+                                                                <div class="image"
+                                                                    style="mask-image: url(/assets/images/accounting/icon/travel.svg);">
+                                                                </div>
+                                                            </div>
+                                                            <b class="fs-8">旅行</b>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li class="col">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="flexRadioDefault" id="flexRadioDefault6">
+                                                        <label class="form-check-label" for="flexRadioDefault6">
+                                                            <div class="icon-image">
+                                                                <div class="image"
+                                                                    style="mask-image: url(/assets/images/accounting/icon/bus.svg);">
+                                                                </div>
+                                                            </div>
+                                                            <b class="fs-8">交通</b>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li class="col">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="flexRadioDefault" id="flexRadioDefault7">
+                                                        <label class="form-check-label" for="flexRadioDefault7">
+                                                            <div class="icon-image">
+                                                                <div class="image"
+                                                                    style="mask-image: url(/assets/images/accounting/icon/beverage.svg);">
+                                                                </div>
+                                                            </div>
+                                                            <b class="fs-8">飲品</b>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li class="col">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="flexRadioDefault" id="flexRadioDefault8">
+                                                        <label class="form-check-label" for="flexRadioDefault8">
+                                                            <div class="icon-image">
+                                                                <div class="image"
+                                                                    style="mask-image: url(/assets/images/accounting/icon/game.svg);">
+                                                                </div>
+                                                            </div>
+                                                            <b class="fs-8">娛樂</b>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li class="col">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="flexRadioDefault" id="flexRadioDefault9">
+                                                        <label class="form-check-label" for="flexRadioDefault9">
+                                                            <div class="icon-image">
+                                                                <div class="image"
+                                                                    style="mask-image: url(/assets/images/accounting/icon/education.svg);">
+                                                                </div>
+                                                            </div>
+                                                            <b class="fs-8">教育</b>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li class="col">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="flexRadioDefault" id="flexRadioDefault10">
+                                                        <label class="form-check-label" for="flexRadioDefault10">
+                                                            <div class="icon-image">
+                                                                <div class="image"
+                                                                    style="mask-image: url(/assets/images/accounting/icon/piggy-bank.svg);">
+                                                                </div>
+                                                            </div>
+                                                            <b class="fs-8">投資</b>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li class="col">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="flexRadioDefault" id="flexRadioDefault11">
+                                                        <label class="form-check-label" for="flexRadioDefault11">
+                                                            <div class="icon-image">
+                                                                <div class="image"
+                                                                    style="mask-image: url(/assets/images/accounting/icon/shopping.svg);">
+                                                                </div>
+                                                            </div>
+                                                            <b class="fs-8">失心瘋</b>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li class="col">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="flexRadioDefault" id="flexRadioDefault12">
+                                                        <label class="form-check-label" for="flexRadioDefault12">
+                                                            <div class="icon-image">
+                                                                <div class="image"
+                                                                    style="mask-image: url(/assets/images/accounting/icon/baby.svg);">
+                                                                </div>
+                                                            </div>
+                                                            <b class="fs-8">小孩</b>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li class="col">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="flexRadioDefault" id="flexRadioDefault13">
+                                                        <label class="form-check-label" for="flexRadioDefault13">
+                                                            <div class="icon-image">
+                                                                <div class="image"
+                                                                    style="mask-image: url(/assets/images/accounting/icon/shopping.svg);">
+                                                                </div>
+                                                            </div>
+                                                            <b class="fs-8">購物</b>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+                                            <div class="row g-3 gy-1">
+                                                <div class="col-12">
+                                                    <input type="date" value="2024-07-01"
+                                                        class="form-control w-auto border-0">
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="number" min="0" class="form-control bg-neutral-100"
+                                                            id="floatingInput-pcice" placeholder="name@example.com">
+                                                        <label for="floatingInput-pcice">支出金額</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="form-floating">
+                                                        <select class="form-select  bg-neutral-100" id="floatingSelect"
+                                                            aria-label="Floating label select example">
+                                                            <option value="1">現金</option>
+                                                            <option value="2">LINE PAY</option>
+                                                            <option value="3">Apple pay</option>
+                                                            <option value="4">全支付</option>
+                                                        </select>
+                                                        <label for="floatingSelect">支付方式</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="exampleFormControlTextarea1"
+                                                        class="form-label fs-7">備註</label>
+                                                    <textarea class="form-control bg-neutral-100"
+                                                        id="exampleFormControlTextarea1 fs-8" rows="3"
+                                                        placeholder="請輸入文字"></textarea>
+                                                    <div id="comment-subtext" class="form-text text-end fs-8">0/50</div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <button type="submit" class="btn btn-primary mb-3 w-100 py-3">新增</button>
+                                                </div>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                    <!-- tab-pane -->
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                        aria-labelledby="pills-profile-tab" tabindex="0">
+                                        <ul
+                                            class="list-unstyled icon-type-list row gx-2 gy-4 row-cols-4 border-bottom py-4">
+                                            <li class="col">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                        id="flexRadioDefaultB-2">
+                                                    <label class="form-check-label" for="flexRadioDefaultB-2">
+                                                        <div class="icon-image">
+                                                            <div class="image"
+                                                                style="mask-image: url(/assets/images/accounting/icon/add-circle.svg);">
+                                                            </div>
+                                                        </div>
+                                                        <b class="fs-8">新增</b>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li class="col">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                        id="flexRadioDefaultB-3" checked>
+                                                    <label class="form-check-label" for="flexRadioDefaultB-3">
+                                                        <div class="icon-image">
+                                                            <div class="image"
+                                                                style="mask-image: url(/assets/images/accounting/icon/money.svg);">
+                                                            </div>
+                                                        </div>
+                                                        <b class="fs-8">薪水</b>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li class="col">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                        id="flexRadioDefaultB-4">
+                                                    <label class="form-check-label" for="flexRadioDefaultB-4">
+                                                        <div class="icon-image">
+                                                            <div class="image"
+                                                                style="mask-image: url(/assets/images/accounting/icon/credit-card.svg);">
+                                                            </div>
+                                                        </div>
+                                                        <b class="fs-8">保險</b>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li class="col">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                        id="flexRadioDefaultB-5">
+                                                    <label class="form-check-label" for="flexRadioDefaultB-5">
+                                                        <div class="icon-image">
+                                                            <div class="image"
+                                                                style="mask-image: url(/assets/images/accounting/icon/bonus.svg);">
+                                                            </div>
+                                                        </div>
+                                                        <b class="fs-8">獎金</b>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li class="col">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                        id="flexRadioDefaultB-6">
+                                                    <label class="form-check-label" for="flexRadioDefaultB-6">
+                                                        <div class="icon-image">
+                                                            <div class="image"
+                                                                style="mask-image: url(/assets/images/accounting/icon/piggy-bank.svg);">
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <b class="fs-8">股票</b>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li class="col">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                        id="flexRadioDefaultB-7">
+                                                    <label class="form-check-label" for="flexRadioDefaultB-7">
+                                                        <div class="icon-image">
+                                                            <div class="image"
+                                                                style="mask-image: url(/assets/images/accounting/icon/invest.svg);">
+                                                            </div>
+                                                        </div>
+                                                        <b class="fs-8">投資</b>
+                                                    </label>
+                                                </div>
+                                            </li>
+
+
+                                        </ul>
+
+                                        <div class="row g-3 gy-1">
+                                            <div class="col-12">
+                                                <input type="date" value="2024-07-01"
+                                                    class="form-control border-0 py-4 bg-primary text-white">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-floating mb-3">
+                                                    <input type="number" min="0" class="form-control bg-neutral-100"
+                                                        id="floatingInput-pcice" placeholder="name@example.com">
+                                                    <label for="floatingInput-pcice">收入金額</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="exampleFormControlTextarea1"
+                                                    class="form-label fs-7">備註</label>
+                                                <textarea class="form-control bg-neutral-100"
+                                                    id="exampleFormControlTextarea1 fs-8" rows="3"
+                                                    placeholder="請輸入文字"></textarea>
+                                                <div id="comment-subtext" class="form-text text-end fs-8">0/50</div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="submit" class="btn btn-primary mb-3 w-100 py-3">新增</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                                    aria-labelledby="pills-profile-tab" tabindex="0">...2</div>
                             </div>
 
                         </main>
                     </div>
-                    <%- include('./layout/nav-bottom',{page:'accounting'}); -%>
+                    <%- include('./layout/tab-bar',{page:'accounting'}); -%>
             </section>
 
         </div>

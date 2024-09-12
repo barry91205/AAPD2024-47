@@ -51,10 +51,22 @@
 
 @import "/assets/scss/base/base";
 
-@import "/assets/scss/themes/theme";
+// iPhone 外框樣式
+@import "/assets/scss/layout/iphone-frame";
 
-@import "/assets/scss/pages/header";
+// iphone 狀態列
+@import "/assets/scss/components/status-bar";
+
+// iphone 下方選單bar
+@import "/assets/scss/components/tab-bar";
+
+// 主要內容
+@import "/assets/scss/layout/main-content";
+
+@import "/assets/scss/themes/theme";
 
 @import "/assets/scss/pages/index";
 
 @import "/assets/scss/pages/budget";
+
+@import "/assets/scss/pages/invoice";

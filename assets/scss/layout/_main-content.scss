@@ -1,0 +1,15 @@
+// contentArea --更換樣式名稱--> main-content
+.main-content {
+    width: 100%;
+    height: calc(100% - 114px);
+    overflow-y: scroll;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 76px;
+    }
+}

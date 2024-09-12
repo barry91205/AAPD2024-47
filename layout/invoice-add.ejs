@@ -1,0 +1,131 @@
+<!-- Modal  -->
+<div class="modal fade" id="invoice-add-Modal" tabindex="-1" aria-labelledby="invoice-add-ModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <form action="./invoice-view_data.html" class="h-100 d-flex flex-column">
+                <div class="modal-header justify-content-center py-2 bg-primary-50 position-relative">
+                    <a href="./invoice-no_data.html" class="position-absolute start-0 top-50 translate-middle-y">
+                        <img src="/assets/images/invoice/arrow-left.svg" width="44">
+                    </a>
+                    <h1 class="fs-5 text-center">匯入發票</h1>
+                </div>
+                <div class="modal-body p-0 container-fluid">
+                    <ul class="nav nav-underline nav-fill gap-0 px-4" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">掃描發票</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">手動輸入</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab" tabindex="0">
+                            <div class="text-center d-flex justify-content-center align-items-center flex-column"
+                                style="min-height: 516px;">
+                                <img src="/assets/images/invoice/camera-slash.svg" width="64" alt="">
+                                <b class="d-block fs-7 pt-1 pb-2">未開啟相機權限</b>
+                                <small class="fs-7 text-neutral-500">目前無法使用掃描發票功能<br>請先至「設定」⭢「CoinBee」中允許相機權限</small>
+                                <a href="#" class="btn btn-primary px-7 py-2 mt-6">開啟權限</a>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab" tabindex="0">
+
+
+
+                            <div class="container-fluid">
+                                <div class="pt-6">
+                                    <h6 class="fs-7 fw-bolder mb-2">選擇發票類型</h6>
+                                </div>
+
+                                <ul class="nav nav-pills nav-fill gap-2" id="scanModeTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link nav-primary py-5 active" id="pills-isAuto-tab"
+                                            data-bs-toggle="pill" data-bs-target="#pills-isAuto" type="button"
+                                            role="tab" aria-controls="pills-isAuto" aria-selected="true">
+                                            <div class="icon-image">
+                                                <div class="image"
+                                                    style="mask-image: url(/assets/images/invoice/qr-code.svg);">
+                                                </div>
+                                            </div>
+                                            <b class="fw-bold">電子發票</b>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link nav-primary py-5" id="pills-isManual-tab"
+                                            data-bs-toggle="pill" data-bs-target="#pills-isManual" type="button"
+                                            role="tab" aria-controls="pills-isManual" aria-selected="false">
+                                            <div class="icon-image">
+                                                <div class="image"
+                                                    style="mask-image: url(/assets/images/invoice/note.svg);">
+                                                </div>
+                                            </div>
+                                            <b class="fw-bold">傳統發票</b>
+                                        </button>
+                                    </li>
+                                </ul>
+
+                                <h6 class="fs-7 fw-bold mt-6 mb-2">輸入發票資訊</h6>
+                                <div class="tab-content" id="scanModeTabContent">
+                                    <div class="tab-pane fade show active" id="pills-isAuto" role="tabpanel"
+                                        aria-labelledby="pills-isAuto-tab" tabindex="0">
+                                        <!-- 電子發票 -->
+                                        <div class="mb-4">
+                                            <label for="formGroupExampleInput" class="form-label text-neutral-800 fs-7">發票號碼</label>
+                                            <input type="text" class="form-control bg-gray" id="formGroupExampleInput" placeholder="AB12345678">
+                                          </div>
+                                          <div class="mb-4">
+                                            <label for="formGroupExampleInput2" class="form-label text-neutral-800 fs-7">消費日期</label>
+                                            <input type="date" class="form-control bg-gray" id="formGroupExampleInput2" placeholder="請選擇日期">
+                                          </div>
+                                          <div class="mb-4">
+                                            <label for="formGroupExampleInput3" class="form-label text-neutral-800 fs-7">發票隨機碼</label>
+                                            <input type="text" class="form-control bg-gray" id="formGroupExampleInput3" placeholder="請輸入發票隨機碼">
+                                          </div>
+                                          <button class="btn btn-primary w-100" type="submit">匯入發票</button>
+
+
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-isManual" role="tabpanel"
+                                        aria-labelledby="pills-isManual-tab" tabindex="0">
+                                        
+                                        <!-- 傳統發票 -->
+                                        <div class="mb-4">
+                                            <label for="formGroupExampleInput" class="form-label text-neutral-800 fs-7">發票號碼</label>
+                                            <input type="text" class="form-control bg-gray" id="formGroupExampleInput" placeholder="AB12345678">
+                                          </div>
+                                          <div class="mb-4">
+                                            <label for="formGroupExampleInput2" class="form-label text-neutral-800 fs-7">消費日期</label>
+                                            <input type="date" class="form-control bg-gray" id="formGroupExampleInput2" placeholder="請選擇日期">
+                                          </div>
+                                          <div class="mb-4">
+                                            <label for="formGroupExampleInput3" class="form-label text-neutral-800 fs-7">消費金額</label>
+                                            <input type="text" class="form-control bg-gray" id="formGroupExampleInput3" placeholder="請輸入消費金額">
+                                          </div>
+                                          <button class="btn btn-primary w-100" type="submit">匯入發票</button>
+
+
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</div>
