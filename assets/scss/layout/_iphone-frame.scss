@@ -55,6 +55,12 @@
     border-radius: 50px;
     position: relative;
 
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
   }
 
 }
