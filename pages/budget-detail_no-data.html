@@ -14,13 +14,13 @@
 
 <body>
     <div class="wrapper">
-        <div class="appWrapper">
-            <section class="appContent">
+        <div class="app-wrapper">
+            <section class="app-content">
                 <%- include('./layout/status-bar'); -%>
                     <div class="main-content">
                         <!-- App 內容 -->
                         <header class="d-flex justify-content-between py-2 bg-primary-50 sticky-top">
-                            <a href="./budget-view_data.html" class="px-3 link-neutral-950">
+                            <a href="./budget_view-data.html" class="px-3 link-neutral-950">
                                 <img src="/assets/images/budget/arrow-left.svg" width="24" alt="">
                             </a>
                             <h1 class="fs-5">日本旅遊</h1>
@@ -40,7 +40,7 @@
                                     aria-controls="pills-profile" aria-selected="false">預算設定</button>
                             </li>
                         </ul>
-                        <main class="pt-6 px-4 bg-gradient-1 h-100">
+                        <main class="pt-6 px-4 bg-gradient-1">
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
                                     aria-labelledby="pills-home-tab" tabindex="0">
@@ -77,7 +77,7 @@
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                                    aria-labelledby="pills-profile-tab" tabindex="0">...2</div>
+                                    aria-labelledby="pills-profile-tab" tabindex="0">....預算設定</div>
                             </div>
                             <%- include('./layout/budget-detail-add'); -%>
                         </main>

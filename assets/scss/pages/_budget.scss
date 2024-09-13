@@ -1,11 +1,11 @@
 .modal {
-    position: absolute;
+    z-index: 9999999;
+    @include media-breakpoint-up(sm) {
+        position: absolute;
+    }
 
     .modal-fullscreen {
         width: 100%;
-        height: calc(100% - 54px);
-        padding-bottom: 60px;
-        top: 54px;
     }
 }
 

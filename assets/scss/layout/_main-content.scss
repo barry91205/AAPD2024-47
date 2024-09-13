@@ -1,15 +1,43 @@
+header {
+    position: sticky;
+
+    @include media-breakpoint-down(sm) {
+        position: fixed !important;
+        width: 100%;
+    }
+
+}
+
 // contentArea --更換樣式名稱--> main-content
 .main-content {
+    position: relative;
     width: 100%;
-    height: calc(100% - 114px);
+    height: 100%;
+    padding-bottom: 82px;
     overflow-y: scroll;
     scrollbar-width: none;
+    background-color: #fff;
 
     &::-webkit-scrollbar {
         display: none;
     }
 
-    @include media-breakpoint-down(sm) {
-        padding-bottom: 76px;
+    @include media-breakpoint-up(sm) {
+        height: calc(100% - 54px);
+
     }
+
+    @include media-breakpoint-down(sm) {
+        padding-top: 41.66px;
+
+    }
+}
+
+
+main {
+    @include media-breakpoint-up(sm) {
+
+        min-height: calc(100% - 24px);
+    }
+
 }

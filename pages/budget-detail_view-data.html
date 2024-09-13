@@ -14,13 +14,13 @@
 
 <body>
     <div class="wrapper">
-        <div class="appWrapper">
-            <section class="appContent">
+        <div class="app-wrapper">
+            <section class="app-content">
                 <%- include('./layout/status-bar'); -%>
                     <div class="main-content">
                         <!-- App 內容 -->
                         <header class="d-flex justify-content-between py-2 bg-primary-50 sticky-top">
-                            <a href="./budget-view_data.html" class="px-3 link-neutral-950">
+                            <a href="./budget_view-data.html" class="px-3 link-neutral-950">
                                 <img src="/assets/images/budget/arrow-left.svg" width="24" alt="">
                             </a>
                             <h1 class="fs-5">日本旅遊</h1>
@@ -40,7 +40,7 @@
                                     aria-controls="pills-profile" aria-selected="false">預算設定</button>
                             </li>
                         </ul>
-                        <main class="pt-6 px-4 bg-gradient-1 position-relative h-100">
+                        <main class="pt-6 px-4 bg-gradient-1">
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
                                     aria-labelledby="pills-home-tab" tabindex="0">
@@ -87,15 +87,14 @@
                                 </div>
                             </div>
 
-                            <div class="alert-notion position-absolute start-50 translate-middle-x "
-                                style="width: calc(100% - 32px);">
-                                <div class="alert alert-success fs-7 flex-grow-1 mb-8 text-start fw-bolder text-neutral-950 py-3 px-4 mx-0 rounded-1"
-                                    role="alert">
-                                    <i class="bi bi-check-circle text-success-300 me-2 d-inline-block"></i>
-                                    新增分類成功
-                                </div>
-                            </div>
+
                         </main>
+                        <div class="alert-notion">
+                            <div class="alert alert-success fs-7 flex-grow-1 text-start fw-bolder text-neutral-950 py-3 px-4" role="alert">
+                                <i class="bi bi-check-circle text-success-300 me-2 d-inline-block"></i>
+                                新增分類成功
+                            </div>
+                        </div>
                         <div class="loading position-absolute top-50 start-50 translate-middle">
                             <img src="/assets/images/invoice/Loading.svg" width="48px" class="loading-img">
                         </div>

@@ -1,6 +1,6 @@
 // 顏色
 .bg-gradient-1 {
-    background: linear-gradient(180deg, $primary-50 2%, $white 60%);
+    background: linear-gradient(180deg, $primary-50 5%, $white 80%);
 }
 
 // 下拉樣式
@@ -102,4 +102,22 @@
 
 .form-control:focus{
     box-shadow: none;
+}
+
+
+.loading,
+.alert-notion {
+    opacity: 0;
+}
+
+
+.alert-notion{
+    position: absolute;
+    width: calc(100% - 32px);
+    bottom: 82px;
+    left: 50%;
+    transform: translateX(-50%);
+    @include media-breakpoint-down(sm){
+        position: fixed;
+    }
 }

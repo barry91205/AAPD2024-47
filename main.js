@@ -2,6 +2,7 @@ import './assets/scss/all.scss';
 import 'bootstrap'
 
 import { gsap } from "gsap";
+
 document.addEventListener("DOMContentLoaded", (event) => {
     // Start GSAP code when the DOM is fully loaded
     window.onload = function () {
@@ -14,7 +15,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
         // Add animations to the timeline
         tl.to(loadingElement, { opacity: 1, duration: 0.5 })  // Fade in .loading
-            .to(loadingElement, { opacity: 0, duration: 0.5, delay: 3 })  // Keep .loading for 3 seconds, then fade out
+            .to(loadingElement, { opacity: 0, duration: 0.5, delay: 1.5 })  // Keep .loading for 3 seconds, then fade out
             .to(alertElement, { opacity: 1, duration: 0.5 })  // Fade in .alert-notion
             .to(alertElement, { opacity: 0, duration: 0.5, delay: 4 });  // Keep .alert-notion for 4 seconds, then fade out
 

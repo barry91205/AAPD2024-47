@@ -2,15 +2,13 @@
   background-color: #fff;
   justify-content: space-between;
   flex-wrap: nowrap;
-  position: absolute;
   bottom: 0;
   width: 100%;
   z-index: 99999;
   box-shadow: 0px -2px 8px 0px rgba(9, 21, 75, 0.06);
-
-
-  
-
+  @include media-breakpoint-up(sm) {
+    position: absolute;
+  }
   @include media-breakpoint-down(sm) {
     position: fixed;
   }
@@ -29,7 +27,8 @@
       visibility: hidden;
     }
 
-    &.active,&:hover {
+    &.active,
+    &:hover {
       color: $primary;
 
       .link-normal {
@@ -70,4 +69,3 @@
     }
   }
 }
-

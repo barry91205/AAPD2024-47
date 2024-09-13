@@ -10,10 +10,9 @@
     background-color: #646464;
   }
 
-  .appWrapper {
+  .app-wrapper {
     width: 375px;
     height: 812px;
-
     position: relative;
 
     &::after {
@@ -48,7 +47,7 @@
     }
   }
 
-  .appContent {
+  .app-content {
     background-color: #fff;
     overflow: hidden;
     overflow-y: scroll;
@@ -56,7 +55,6 @@
     height: 100%;
     border-radius: 50px;
     position: relative;
-
     scrollbar-width: none;
 
     &::-webkit-scrollbar {
@@ -68,3 +66,12 @@
 }
 
 
+@include media-breakpoint-down(sm) {
+  .app-wrapper {
+    width: 100%;
+    height: 100vh;
+  }
+  .app-content{
+    height: 100%;
+  }
+}
