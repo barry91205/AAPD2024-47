@@ -58,12 +58,6 @@
                                                 class="btn btn-primary px-7 py-2 mt-6">開啟權限</a>
                                         </div>
                                         <div class="camera-zone position-absolute" style="display: none;">
-                                            <div class=" camera-layout camera-layout-1"
-                                                style="background-image: url(/assets/images/invoice/camera-zone-1.png);">
-                                            </div>
-                                            <div class=" camera-layout camera-layout-2"
-                                                style="background-image: url(/assets/images/invoice/camera-zone-2.png);">
-                                            </div>
                                             <div class=" camera-layout camera-layout-3 px-4"
                                                 style="background-image: url(/assets/images/invoice/camera-zone-3.png);">
                                                 <div class="alert alert-success fs-7 text-start fw-bolder text-neutral-950 py-3 px-4 w-100"
@@ -72,6 +66,14 @@
                                                         class="bi bi-check-circle text-success-300 me-2 d-inline-block"></i>
                                                     匯入成功
                                                 </div>
+                                            </div>
+
+                                            <div class=" camera-layout camera-layout-2"
+                                                style="background-image: url(/assets/images/invoice/camera-zone-2.png);">
+                                            </div>
+
+                                            <div class=" camera-layout camera-layout-1"
+                                                style="background-image: url(/assets/images/invoice/camera-zone-1.png);">
                                             </div>
 
                                         </div>
@@ -181,35 +183,7 @@
 
     <script>
         // 確保 DOM 內容已經加載完成
-        document.addEventListener("DOMContentLoaded", function () {
 
-            // 選取開啟相機按鈕和相機區域
-            const openCameraButton = document.querySelector('#open-camera-button');
-            const cameraZone = document.querySelector('.camera-zone');
-
-            // 當按鈕被點擊時觸發事件
-            openCameraButton.addEventListener('click', function () {
-
-                // 顯示相機區域
-                cameraZone.style.display = 'block';
-
-                // 建立 GSAP 動畫時間軸
-                const timeline_import = gsap.timeline({
-                    onComplete: function () {
-                        // 當動畫完成後轉跳到新頁面
-                        window.location.href = 'myInvoice_view-data.html';
-                    }
-                });
-
-                // 添加動畫到時間軸
-                timeline_import.to('.camera-layout-1', { opacity: 1, duration: 1 })
-                    .to('.camera-layout-1', { opacity: 0, duration: 1 })
-                    .to('.camera-layout-2', { opacity: 1, duration: 1 })
-                    .to('.camera-layout-2', { opacity: 0, duration: 1 })
-                    .to('.camera-layout-3', { opacity: 1, duration: 1 })
-                    .to('.camera-layout-3', { opacity: 0, duration: 1 });
-            });
-        });
 
 
     </script>

@@ -28,3 +28,33 @@ document.addEventListener("DOMContentLoaded", (event) => {
         });
     };
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const openCameraButton = document.querySelector('#open-camera-button');
+    const cameraZone = document.querySelector('.camera-zone');
+
+    openCameraButton.addEventListener('click', function () {
+
+        // 顯示相機區域
+        cameraZone.style.display = 'block';
+        console.log('block');
+
+        // 建立 GSAP 動畫時間軸
+        const timeline_import = gsap.timeline({
+            onComplete: function () {
+                console.log('123');
+                window.location.href = 'myInvoice_view-data.html';
+            }
+        });
+
+        // 添加動畫到時間軸
+        timeline_import.to('.camera-layout-1', { autoAlpha: 1, duration: 2 }) // 淡入
+            .to('.camera-layout-1', { autoAlpha: 0, duration: 1 }, "-=0.5") // 淡出並且下一個淡入效果提前0.5秒開始
+            .to('.camera-layout-2', { autoAlpha: 1, duration: 2 }, "-=0.5") // 淡入
+            .to('.camera-layout-2', { autoAlpha: 0, duration: 1 }, "-=0.5") // 淡出並且下一個淡入效果提前0.5秒開始
+            .to('.camera-layout-3', { autoAlpha: 1, duration: 2 }, "-=0.5") // 淡入
+            .to('.camera-layout-3', { autoAlpha: 0, duration: 1 }); // 最後一個淡出後再跳轉頁面
+    });
+});
