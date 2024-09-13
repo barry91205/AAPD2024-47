@@ -40,7 +40,7 @@
                                     aria-controls="pills-profile" aria-selected="false">預算設定</button>
                             </li>
                         </ul>
-                        <main class="pt-6 px-4 bg-gradient-1 h-100">
+                        <main class="pt-6 px-4 bg-gradient-1 position-relative h-100">
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
                                     aria-labelledby="pills-home-tab" tabindex="0">
@@ -86,16 +86,26 @@
                                     ...預算設定
                                 </div>
                             </div>
-                            <%- include('./layout/budget-detail-add'); -%>
+
+                            <div class="alert-notion position-absolute start-50 translate-middle-x "
+                                style="width: calc(100% - 32px);">
+                                <div class="alert alert-success fs-7 flex-grow-1 mb-8 text-start fw-bolder text-neutral-950 py-3 px-4 mx-0 rounded-1"
+                                    role="alert">
+                                    <i class="bi bi-check-circle text-success-300 me-2 d-inline-block"></i>
+                                    新增分類成功
+                                </div>
+                            </div>
                         </main>
+                        <div class="loading position-absolute top-50 start-50 translate-middle">
+                            <img src="/assets/images/invoice/Loading.svg" width="48px" class="loading-img">
+                        </div>
                     </div>
-                    <%- include('./layout/tab-bar',{page:'budget'}); -%>
+                    <%- include('./layout/budget-detail-add'); -%>
+                        <%- include('./layout/tab-bar',{page:'budget'}); -%>
             </section>
 
         </div>
     </div>
-
-
 
     <script type="module" src="../main.js"></script>
 </body>

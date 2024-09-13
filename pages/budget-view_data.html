@@ -22,17 +22,18 @@
                         <header class="d-flex justify-content-between py-2 bg-primary-50 sticky-top">
                             <a href="#" class="px-3 link-neutral-950"><i class="bi bi-search"></i></a>
                             <h1 class="fs-5">預算</h1>
-                            <a class="px-3 link-neutral-950" data-bs-toggle="modal" data-bs-target="#budget-add-Modal"><i class="bi bi-plus-lg"></i></a>
+                            <a class="px-3 link-neutral-950" data-bs-toggle="modal"
+                                data-bs-target="#budget-add-Modal"><i class="bi bi-plus-lg"></i></a>
                         </header>
-                        <main class="pt-6 px-4">
-
+                        <main class="pt-6 px-4 position-relative h-100">
                             <div class="sub-title d-flex justify-content-between fs-7 mb-2">
                                 <b class="bufget-date">2024年08月</b>
                                 <span class="text-primary-600">整體預算 $50,000</span>
                             </div>
                             <ul class="list-unstyled">
                                 <li>
-                                    <a class="d-flex justify-content-between bg-success-50 rounded-2 p-3 mb-2 link-neutral-950" href="./budget-detail-no_data.html">
+                                    <a class="d-flex justify-content-between bg-success-50 rounded-2 p-3 mb-2 link-neutral-950"
+                                        href="./budget-detail-no_data.html">
                                         <div class="d-flex align-items-center gap-3">
                                             <small
                                                 class="d-flex align-items-center justify-content-center fs-8 rounded-circle border-success-200 border border-3"
@@ -47,9 +48,19 @@
                                     </a>
                                 </li>
                             </ul>
-                            
-                            <%- include('./layout/budget-add'); -%>
+                            <div class="alert-notion position-absolute start-50 translate-middle-x bottom-0"
+                                style="width: calc(100% - 32px);">
+                                <div class="alert alert-success fs-7 flex-grow-1 mb-11 text-start fw-bolder text-neutral-950 py-3 px-4 mx-0 rounded-1"
+                                    role="alert">
+                                    <i class="bi bi-check-circle text-success-300 me-2 d-inline-block"></i>
+                                    新增預算成功
+                                </div>
+                            </div>
                         </main>
+                        <div class="loading position-absolute top-50 start-50 translate-middle">
+                            <img src="/assets/images/invoice/Loading.svg" width="48px" class="loading-img">
+                        </div>
+                        <%- include('./layout/budget-add'); -%>
                     </div>
                     <%- include('./layout/tab-bar',{page:'budget'}); -%>
             </section>
@@ -60,6 +71,8 @@
 
 
     <script type="module" src="../main.js"></script>
+
+
 </body>
 
 </html>

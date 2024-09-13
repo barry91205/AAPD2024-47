@@ -1,10 +1,10 @@
-.nav-link.nav-primary{
+.nav-link.nav-primary {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: $neutral-700;
     border: 2px solid $neutral-100;
-    
+
 
     .icon-image {
         position: relative;
@@ -27,7 +27,7 @@
         }
     }
 
-    &.active{
+    &.active {
         color: $primary;
         border-color: $primary;
 
@@ -40,6 +40,11 @@
     }
 }
 
-.loading, .alert-notion {
+.loading,
+.alert-notion {
     opacity: 0;
+}
+
+.alert-notion {
+    bottom: 76px;
 }

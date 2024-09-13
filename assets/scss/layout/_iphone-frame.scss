@@ -7,6 +7,7 @@
     min-height: 100vh;
     padding: 5% 0;
     overflow: hidden;
+    background-color: #646464;
   }
 
   .appWrapper {
@@ -48,6 +49,7 @@
   }
 
   .appContent {
+    background-color: #fff;
     overflow: hidden;
     overflow-y: scroll;
     width: 100%;
