@@ -56,3 +56,27 @@ document.addEventListener("DOMContentLoaded", function () {
             .to('.camera-layout-3', { autoAlpha: 0, duration: 1 }); // 最後一個淡出後再跳轉頁面
     });
 });
+
+// 取得表單和按鈕的引用
+const form = document.getElementById('myForm');
+const submitBtn = document.getElementById('submitBtn');
+
+// 當表單中有變化時執行檢查
+form.addEventListener('input', function() {
+  // 檢查表單是否填寫完整並且是有效的
+  if (form.checkValidity()) {
+    submitBtn.disabled = false; // 啟用按鈕
+  } else {
+    submitBtn.disabled = true; // 禁用按鈕
+  }
+});
+
+// Bootstrap 5 的表單驗證
+form.addEventListener('submit', function(event) {
+  if (!form.checkValidity()) {
+    event.preventDefault(); // 停止提交
+    event.stopPropagation(); // 停止傳播
+  }
+  form.classList.add('was-validated'); // 加入 Bootstrap 的驗證樣式
+}, false);
+
