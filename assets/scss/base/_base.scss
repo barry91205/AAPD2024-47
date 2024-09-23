@@ -1,5 +1,6 @@
 body {
-    background-color: $primary-50 !important;;
+    background-color: $primary-50 !important;
+    ;
 }
 
 h1,
@@ -13,4 +14,9 @@ h6 {
 
 p {
     letter-spacing: 0.03em;
+}
+
+input::placeholder {
+    color: $neutral-400;
+    /* 使用變數設置 placeholder 顏色 */
 }

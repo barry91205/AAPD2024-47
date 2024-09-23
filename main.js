@@ -39,13 +39,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // 顯示相機區域
         cameraZone.style.display = 'block';
-        console.log('block');
 
         // 建立 GSAP 動畫時間軸
         const timeline_import = gsap.timeline({
             onComplete: function () {
-                console.log('123');
-                window.location.href = 'myInvoice_view-data.html';
+                // window.location.href = 'myInvoice_view-data.html';
             }
         });
 
