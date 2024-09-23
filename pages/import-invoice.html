@@ -149,27 +149,28 @@
                                             </div>
                                             <div class="tab-pane fade" id="pills-isManual" role="tabpanel"
                                                 aria-labelledby="pills-isManual-tab" tabindex="0">
-                                                <form action="myInvoice_view-data.html">
+                                                <form action="myInvoice_view-data.html" id="myForm2" class="needs-validation" novalidate>
                                                     <!-- 傳統發票 -->
                                                     <div class="mb-4">
                                                         <label for="formGroupExampleInput"
                                                             class="form-label text-neutral-800 fs-7">發票號碼</label>
                                                         <input type="text" class="form-control bg-gray"
-                                                            id="formGroupExampleInput" placeholder="AB12345678">
+                                                            id="formGroupExampleInput" placeholder="AB12345678" required>
                                                     </div>
                                                     <div class="mb-4">
                                                         <label for="formGroupExampleInput2"
                                                             class="form-label text-neutral-800 fs-7">消費日期</label>
                                                         <input type="date" class="form-control bg-gray"
-                                                            id="formGroupExampleInput2" placeholder="請選擇日期">
+                                                            id="formGroupExampleInput2" placeholder="請選擇日期" required>
                                                     </div>
                                                     <div class="mb-4">
                                                         <label for="formGroupExampleInput3"
                                                             class="form-label text-neutral-800 fs-7">消費金額</label>
                                                         <input type="text" class="form-control bg-gray"
-                                                            id="formGroupExampleInput3" placeholder="請輸入消費金額">
+                                                            id="formGroupExampleInput3" placeholder="請輸入消費金額" required>
                                                     </div>
-                                                    <button class="btn btn-primary w-100 py-2" type="submit">匯入發票</button>
+                                                    <button class="btn btn-primary w-100 py-2" type="submit" id="submitBtn2"
+                                                    disabled>匯入發票</button>
                                                 </form>
                                             </div>
                                         </div>

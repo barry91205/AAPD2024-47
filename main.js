@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// 取得表單和按鈕的引用
+// 電子發票
 const form = document.getElementById('myForm');
 const submitBtn = document.getElementById('submitBtn');
 
@@ -78,5 +78,28 @@ form.addEventListener('submit', function(event) {
     event.stopPropagation(); // 停止傳播
   }
   form.classList.add('was-validated'); // 加入 Bootstrap 的驗證樣式
+}, false);
+// ------------------------------------------------------------
+// 傳統發票
+const form2 = document.getElementById('myForm2');
+const submitBtn2 = document.getElementById('submitBtn2');
+
+// 當表單中有變化時執行檢查
+form2.addEventListener('input', function() {
+  // 檢查表單是否填寫完整並且是有效的
+  if (form2.checkValidity()) {
+    submitBtn2.disabled = false; // 啟用按鈕
+  } else {
+    submitBtn2.disabled = true; // 禁用按鈕
+  }
+});
+
+// Bootstrap 5 的表單驗證
+form2.addEventListener('submit', function(event) {
+  if (!Tform.checkValidity()) {
+    event.preventDefault(); // 停止提交
+    event.stopPropagation(); // 停止傳播
+  }
+  form2.classList.add('was-validated'); // 加入 Bootstrap 的驗證樣式
 }, false);
 
