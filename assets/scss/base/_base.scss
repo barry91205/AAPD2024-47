@@ -17,6 +17,5 @@ p {
 }
 
 input::placeholder {
-    color: $neutral-400;
-    /* 使用變數設置 placeholder 顏色 */
+    color: $neutral-400 !important;
 }
