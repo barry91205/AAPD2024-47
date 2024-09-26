@@ -16,6 +16,16 @@ p {
     letter-spacing: 0.03em;
 }
 
-input::placeholder {
+.form-control::placeholder {
     color: $neutral-400 !important;
+}
+
+.form-floating {
+    input::placeholder {
+        color: transparent  !important;
+    }
+
+    label{
+        color: $neutral-400;
+    }
 }
